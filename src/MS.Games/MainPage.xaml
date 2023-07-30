@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ctrl="clr-namespace:MS.Games.Controls"
              x:Class="MS.Games.MainPage">
-    <ContentPage.Resources>
+    <!--<ContentPage.Resources>
         <Style x:Key="RaisedFrameStyle" TargetType="Frame">
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
@@ -21,19 +22,18 @@
                 </VisualStateGroupList>
             </Setter>
         </Style>
-    </ContentPage.Resources>
+    </ContentPage.Resources>-->
 
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
+            <ctrl:CardView></ctrl:CardView>
             <HorizontalStackLayout BackgroundColor="Green" HeightRequest="260">
                 <Frame Padding="5" 
                        BorderColor="Black" 
                        HasShadow="False" 
-                       Style="{StaticResource RaisedFrameStyle}" 
                        HeightRequest="130"
                        x:Name="raisedFrame">
                     <Frame.GestureRecognizers>
